@@ -1,4 +1,4 @@
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
+import { MoonIcon, SunIcon } from "./ui/icons"
 import { useTheme } from "./theme-provider"
 
 export function ThemeToggle() {

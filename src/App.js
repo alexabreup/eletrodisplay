@@ -168,23 +168,17 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="app-theme">
       <div className="min-h-screen bg-background text-foreground">
         <div className="flex flex-col min-h-screen">
-          <header className="sticky top-0 z-50 w-full border-b backdrop-blur">
-            <div className="container flex h-14 max-w-screen-2xl items-center">
-              <div className="mr-4 flex">
+          <main className="flex-1">
+            <div className="app-container">
+              <div className="flex justify-between items-center mb-4">
                 <button
                   className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9"
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                   {isMobileMenuOpen ? <Cross1Icon className="h-4 w-4" /> : <HamburgerMenuIcon className="h-4 w-4" />}
                 </button>
-              </div>
-              <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
                 <ThemeToggle />
               </div>
-            </div>
-          </header>
-          <main className="flex-1">
-            <div className="app-container">
               <div 
                 className="video-section"
                 style={{
